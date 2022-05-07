@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {}
+    "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {
+    "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
+        "projectPath": "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
         "packagesPath": "C:\\Users\\jfish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\obj\\",
+        "outputPath": "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jfish\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
