@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 
 namespace API.Controllers
@@ -20,17 +22,17 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Product>> GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = context.Products.ToList();
+           return await context.Products.ToListAsync();
 
-            return Ok(products);
+            
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Product>GetProduct(int id)
+        public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            return context.Products.Find(id);
+            return await context.Products.FindAsync(id);
         }
     }
 }
