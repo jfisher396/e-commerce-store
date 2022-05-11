@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BKRZVtwUaIV9JmPK+My7uCI1mPgsUjlA4CtGc1UdTOKpdFLz9Rj4lEll5R9YCuL9MvyRTKdMP87SM2qn0rxrig==",
+  "dgSpecHash": "AbaTWjPHJA0hTTg0I4Cj8/sE6e19NZmJzoiGBarQfD0vGcyaG6ZTamHROiZUrlz1WPbo4GhDyqauAfc2tEHnOA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfish\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jfish\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.3\\microsoft.data.sqlite.core.6.0.3.nupkg.sha512",
