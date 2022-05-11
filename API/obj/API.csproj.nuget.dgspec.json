@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\API.csproj": {}
+    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\API.csproj": {
+    "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\API.csproj",
+        "projectPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\API.csproj",
         "packagesPath": "C:\\Users\\jfish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\api\\obj\\",
+        "outputPath": "C:\\Users\\jfish\\OneDrive\\Desktop\\WorkingCode\\e-commerce-store\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jfish\\AppData\\Roaming\\NuGet\\NuGet.Config"
