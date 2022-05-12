@@ -1,29 +1,25 @@
 import { useEffect, useState } from "react";
+import { Product } from "./product";
 
 function App() {
-  const [products, setProducts] = useState([
-    {
-      name: "product1",
-      price: 200.0,
-    },
-    {
-      name: "product2",
-      price: 100.0,
-    },
-  ]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products') 
-    .then((response) => response.json())
-    .then((data) => setProducts(data))
-  }, []) 
+    fetch("http://localhost:5000/api/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
 
   function addProduct() {
-    setProducts([
-      ...products,
+    setProducts((prevState) => [
+      ...prevState,
       {
-        name: "product",
-        price: 300.0,
+        id: prevState.length + 101,
+        name: "product" + (prevState.length + 1),
+        price: prevState.length * 100 + 100,
+        brand: "generic",
+        description: "default",
+        pictureUrl: "https://placekitten.com/200/300",
       },
     ]);
   }
@@ -32,9 +28,9 @@ function App() {
     <div>
       <h1>Re-Store</h1>
       <ul>
-        {products.map((item) => (
-          <li key={item.name}>
-            {item.name} - {item.price}
+        {products.map((product) => (
+          <li key={product.id}>
+            {product.name} - {product.price}
           </li>
         ))}
       </ul>
