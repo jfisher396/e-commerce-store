@@ -1,5 +1,6 @@
-import React from "react";
-import { Product } from "../../app/models/product"
+import { Button } from "@mui/material";
+import { Product } from "../../app/models/product";
+import ProductList from "./ProductList";
 
 interface Props {
   products: Product[];
@@ -9,14 +10,8 @@ interface Props {
 export default function Catalog({ products, addProductHandler }: Props) {
   return (
     <>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name} - {product.price}
-          </li>
-        ))}
-      </ul>
-      <button onClick={addProductHandler}>Add Product</button>
+      <ProductList products={products}></ProductList>
+      <Button variant="contained" onClick={addProductHandler}>Add Product</Button>
     </>
   );
 }
