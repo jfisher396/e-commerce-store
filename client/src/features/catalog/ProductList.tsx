@@ -15,7 +15,6 @@ export default function ProductList({ products }: Props) {
           <Grid item xs={3} key={product.id}>
             <ProductCard key={product.id} product={product}></ProductCard>
           </Grid>
-          
         ))}
       </Grid>
     </>

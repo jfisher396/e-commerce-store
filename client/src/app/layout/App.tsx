@@ -14,12 +14,15 @@ function App() {
   const theme = createTheme({
     palette: {
       mode: paletteType,
+      background: {
+        default: paletteType === "light" ? "#eaeaea" : "#121212"
+      }
     },
   });
 
-  const paletteModeHandler = ()=> {
-    setDarkMode(!darkMode)
-  }
+  const paletteModeHandler = () => {
+    setDarkMode(!darkMode);
+  };
 
   return (
     <ThemeProvider theme={theme}>
