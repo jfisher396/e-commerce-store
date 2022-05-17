@@ -1,14 +1,14 @@
-import Catalog from "../../features/catalog/Catalog";
 import {
   Container,
   createTheme,
   CssBaseline,
   ThemeProvider,
 } from "@mui/material";
-import Header from "./Header";
 import { useState } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Header from "./Header";
 import HomePage from "../../features/home/HomePage";
+import Catalog from "../../features/catalog/Catalog";
 import ProductDetails from "../../features/catalog/ProductDetails";
 import AboutPage from "../../features/about/AboutPage";
 import ContactPage from "../../features/contact/ContactPage";
@@ -20,8 +20,8 @@ function App() {
     palette: {
       mode: paletteType,
       background: {
-        default: paletteType === "light" ? "#eaeaea" : "#121212"
-      }
+        default: paletteType === "light" ? "#eaeaea" : "#121212",
+      },
     },
   });
 
@@ -34,12 +34,13 @@ function App() {
       <CssBaseline />
       <Header paletteModeHandler={paletteModeHandler}></Header>
       <Container>
-        <Route path='/' component={HomePage} />
-        <Route path='/catalog' component={Catalog} />
-        <Route path='/catalog/:id' component={ProductDetails} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/contact' component={ContactPage} />
-        <Catalog />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/catalog" component={Catalog} />
+          <Route exact path="/catalog/:id" component={ProductDetails} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/contact" component={ContactPage} />
+        </Switch>
       </Container>
     </ThemeProvider>
   );
