@@ -30,8 +30,18 @@ export default function Header({ paletteModeHandler }: Props) {
   return (
     <AppBar position="static" sx={{ mb: 4 }}>
       <Toolbar>
-        <Typography variant="h6" component={NavLink} to='/' sx={{ color: 'inherit', textDecoration: 'none'}}>RE-STORE</Typography>
+
+        <Typography
+          variant="h6"
+          component={NavLink}
+          to="/"
+          sx={{ color: "inherit", textDecoration: "none" }}
+        >
+          RE-STORE
+        </Typography>
+        
         <Switch onClick={paletteModeHandler} />
+
         <List sx={{ display: "flex" }}>
           {midLinks.map(({ title, path }) => (
             <ListItem
@@ -45,11 +55,12 @@ export default function Header({ paletteModeHandler }: Props) {
           ))}
         </List>
 
-        <IconButton size="large" sx={{ color: 'inherit' }}>
+        <IconButton size="large" sx={{ color: "inherit" }}>
           <Badge badgeContent={4} color="secondary">
             <ShoppingCart />
           </Badge>
         </IconButton>
+        
         <List sx={{ display: "flex" }}>
           {rightLinks.map(({ title, path }) => (
             <ListItem
@@ -62,6 +73,7 @@ export default function Header({ paletteModeHandler }: Props) {
             </ListItem>
           ))}
         </List>
+        
       </Toolbar>
     </AppBar>
   );
